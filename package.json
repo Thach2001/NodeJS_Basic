@@ -1,0 +1,50 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Hoc NodeJS co ban",
+  "main": "src/index.js",
+  "scripts": {
+    "beautiful": "prettier --single-quote --trailing-comma all --tab-width 4 --write 'stylelint src / ** / *. Scss --syntax scss'",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thach2001/NodeJS_Basic.git"
+  },
+  "keywords": [
+    "thach",
+    "nodejs",
+    "basic",
+    "IT"
+  ],
+  "author": "thach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thach2001/NodeJS_Basic/issues"
+  },
+  "homepage": "https://github.com/Thach2001/NodeJS_Basic#readme",
+  "lint-staged": {
+    "stylelint src / ** / *. Scss --syntax scss": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "mongoose": "^6.5.2"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "mongoose-slug-generator": "^1.0.4",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  }
+}

@@ -1,0 +1,26 @@
+<div class='mt-4'>
+    <form method='POST' action=''>
+        {{!thay đổi Request URL }}
+        <div class='form-group'>
+            <label for='search-input'>Từ khóa</label>
+            <input
+                typ='text'
+                name='q'
+                class='form-control'
+                id='search-input'
+                placeholder='Nhập từ khóa...'
+            />
+        </div>
+
+        <div class='form-group'>
+            <label for='gender-input'>Giới tính</label>
+            <section name='gender' class='form-control' id='gender-input'>
+                <option value=''>-- Chọn giới tính --</option>
+                <option value='male'>Name</option>
+                <option value='female'>Nữ</option>
+            </section>
+        </div>
+
+        <button type='submit' class='btn btn-primary'>Submit</button>
+    </form>
+</div>
